@@ -2,10 +2,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment, faHeart } from '@fortawesome/free-regular-svg-icons';
+import { useState } from 'react/cjs/react.production.min';
 
 const LikeSection = props => {
   // 🔥 Make sure the parent of LikeSection is passing the right props!
   // Hubi in component-ga ka sareysa midaan ay props sax ah soo direyso.
+ 
   
   const { incrementLikes, numberOfLikes } = props;
 
@@ -21,6 +23,8 @@ const LikeSection = props => {
 
         <div className='like-section-wrapper'>
           <FontAwesomeIcon icon={faHeart} />
+          const [LikeCount, setLikeCount]= useState(0)
+  
         </div>
         <div className='like-section-wrapper'>
           <FontAwesomeIcon icon={faComment} />
